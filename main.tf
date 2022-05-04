@@ -1,7 +1,7 @@
 provider "aws" {
   region = "eu-central-1"
-  access_key = ""
-  secret_key = ""
+  access_key = "$tf_access_key"
+  secret_key = "$tf_secret_key"
 }
 resource "aws_instance" "test" {
   ami = "ami-0006ba1ba3732dd33"
